@@ -25,6 +25,10 @@ nav a {
   box-shadow: 0px 5px 10px #df92c1;
 }
 
+nav a:hover {
+    background-color: #e0a4b5;
+}
+
 .titulo {
   font-size: 26px;
 }
@@ -168,4 +172,5 @@ nav a {
     margin: 0;
     padding: 0;
     line-height: 1.1;
+
 }
