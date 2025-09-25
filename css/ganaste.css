@@ -1,0 +1,41 @@
+body {
+  background-color: #020204;
+  background-image: url(../imagen/confeti.gif);
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 {
+  color: #ACACAC;
+  font-size: 60px;
+}
+
+h2 {
+  color: #ACACAC;
+  font-size: 40px;
+}
+
+img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+a {
+  background-color: #252525;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #9C9C9C;
+  display: inline-block;
+}
+
+.btn-jugar {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.btn-inicio {
+  padding: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,44 @@
+body {
+    background-image: url('../imagen/wallpaper.png');
+    margin: 0;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+h1 {
+    color: #020204;
+    background-color: #ffffff;
+    display: inline-block;
+    font-size: 70px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #020204;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+
+a {
+    display: block;
+}
+
+a img {
+    margin-top: 40px;
+}
+
+.btn-inicio {
+    background-color: #ffffff;
+    color: #020204;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 140px;
+}
