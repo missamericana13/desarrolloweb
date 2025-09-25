@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pregunta 1</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/niveles.css">
+
+</head>
+<body>
+  
+  <div class="contenedor">
+    <div class="imagenes">
+      <img src="../imagen/blood.gif" alt="decoración sangre">
+      <img src="../imagen/blood.gif" alt="decoración sangre">
+    </div>
+
+    <h1>Pregunta 1</h1>
+    <h2 id="pregunta"></h2>
+
+    <section>
+      <a id="op1" href="">Opción 1</a>
+      <a id="op2" href="">Opción 2</a>
+    </section>
+
+  <script>
+    const preguntas = [
+      {
+        texto: "¿En que pelicula el asesino usa una mascara de fantasma?",
+        correcta: ["Scream", "nivel2.html"],
+        incorrecta: ["Viernes 13", "incorrecta.html"]
+      },
+      {
+        texto: "¿En que pelicula de 1973 la niña es poseida por un demonio?",
+        correcta: ["El exorcista", "nivel2.html"],
+        incorrecta: ["Poltergeist", "incorrecta.html"]
+      },
+      {
+        texto: "¿Cómo se llama el payaso de la película IT?",
+        correcta: ["Pennywise", "nivel2.html"],
+        incorrecta: ["Joker", "incorrecta.html"]
+      },
+      {
+        texto: "¿En qué franquicia aparece el actor Jhonny Depp?",
+        correcta: ["Pesadilla en Elm Street", "nivel2.html"],
+        incorrecta: ["Sombras tenebrosas", "incorrecta.html"]
+      },
+      {
+        texto: "¿Qué objeto maldito aparece en La llamada?",
+        correcta: ["VHS", "nivel2.html"],
+        incorrecta: ["Telefono", "incorrecta.html"]
+      },
+      {
+        texto: "¿Cómo se llama la muñeca poseída en la saga El Conjuro y su propio spin-off?",
+        correcta: ["Annabelle", "nivel2.html"],
+        incorrecta: ["Alicia", "incorrecta.html"]
+      },
+      {
+        texto: "¿En donde se desarrolla REC 3?",
+        correcta: ["Un casamiento", "nivel2.html"],
+        incorrecta: ["Un barco", "incorrecta.html"]
+      },
+      {
+        texto: "¿Como es nombre del asesino que transfiere su alma al muñeco Chucky?",
+        correcta: ["Charles Lee Ray", "nivel2.html"],
+        incorrecta: ["Hannibal Lecter", "incorrecta.html"]
+      },
+      {
+        texto: "¿Cual es el nombre del campamento donde se desarrolla Viernes 13?",
+        correcta: ["Crystal Lake", "nivel2.html"],
+        incorrecta: ["Silver Lake", "incorrecta.html"]
+      },
+      {
+        texto: "¿Quien dirigio Tiburon?",
+        correcta: ["Steven Spielberg", "nivel2.html"],
+        incorrecta: ["James Cameron", "incorrecta.html"]
+      }
+    ];
+
+    const p = preguntas[Math.floor(Math.random() * preguntas.length)];
+    const correctaIzquierda = Math.random() < 0.5;
+
+    if (correctaIzquierda) {
+      document.getElementById("op1").innerText = p.correcta[0];
+      document.getElementById("op1").href = p.correcta[1];
+      document.getElementById("op2").innerText = p.incorrecta[0];
+      document.getElementById("op2").href = p.incorrecta[1];
+    } else {
+      document.getElementById("op1").innerText = p.incorrecta[0];
+      document.getElementById("op1").href = p.incorrecta[1];
+      document.getElementById("op2").innerText = p.correcta[0];
+      document.getElementById("op2").href = p.correcta[1];
+    }
+
+    document.getElementById("pregunta").innerText = p.texto;
+  </script>
+</body>
+</html>
