@@ -71,6 +71,13 @@ li img {
     height: 200px;
 }
 
+li img:hover {
+    transform: scale(1.05) rotate(-2deg); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4); 
+    cursor: pointer;
+}
+
 ol {
     margin: 5px 0;
     padding-left: 10px;
@@ -174,3 +181,4 @@ ol {
     padding: 0;
     line-height: 1.1;
 }
+
